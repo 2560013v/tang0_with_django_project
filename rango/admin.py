@@ -10,5 +10,5 @@ admin.site.register(Page, pageAdmin)
 class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug':('name',)}
 
-class pageAdmin():
+class pageAdmin(admin.ModelAdmin):
     list_display = ('title', 'category', 'url')

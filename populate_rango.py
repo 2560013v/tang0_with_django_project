@@ -21,10 +21,10 @@ def populate():
         {'title': 'Bottle', 'url': 'http://bottlepy.org/docs/dev/'},
         {'title': 'Flask', 'url': 'http://flask.pocoo.org'}]
 
-    cats = {
+    cats = [
         'Python': {'pages': python_pages},
         'Django': {'pages': django_pages},
-        'Other Frameworks': {'pages': other_pages} }
+        'Other Frameworks': {'pages': other_pages} ]
 
     for cat, cat_data in cats.items():
         c = add_cat(cat)
